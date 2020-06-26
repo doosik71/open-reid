@@ -8,7 +8,7 @@ from ..utils.serialization import write_json
 
 class Market1501(Dataset):
     url = 'https://drive.google.com/file/d/0B8-rUzbwVRk0c054eEozWG9COHM/view'
-    md5 = '65005ab7d12ec1c44de4eeafe813e68a'
+    md5 = '0bd02f01ca0e18f1a43043a2fc697e7e' # '65005ab7d12ec1c44de4eeafe813e68a'
 
     def __init__(self, root, split_id=0, num_val=100, download=True):
         super(Market1501, self).__init__(root, split_id=split_id)
