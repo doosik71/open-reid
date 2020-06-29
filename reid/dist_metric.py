@@ -15,7 +15,7 @@ class DistanceMetric(object):
     def train(self, model, data_loader):
         if self.algorithm == 'euclidean': return
         features, labels = extract_features(model, data_loader)
-        features = torch.stack(features.values()).numpy()
+        features = torch.stack(list(features.values())).numpy()
         labels = torch.Tensor(list(labels.values())).numpy()
         self.metric.fit(features, labels)
 
